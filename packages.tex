@@ -1,0 +1,155 @@
+% Item list style.
+
+\usepackage[inline]{enumitem}
+
+\setlist[itemize]{align=parleft,left=0pt..1em}
+\setlist[enumerate]{align=parleft,left=0pt..1.5em}
+
+% To set font size.
+
+\usepackage{moresize}
+\usepackage{anyfontsize}
+
+% Listings and algorithms.
+
+\usepackage[titlenotnumbered,ruled,vlined,nofillcomment,linesnumbered]{algorithm2e}
+\usepackage{listings,lstautogobble,lstcoq,lstvhdl,lstpseudocoq}
+
+% To strike out text.
+
+% \usepackage[normalem]{ulem}
+
+% Maths.
+
+\usepackage{amsfonts,amssymb,amsmath,amsthm}
+\usepackage{stackengine}
+
+% Custom frame boxes.
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       PROGRAMMING LANGUAGE SPECIFICATION PACKAGES      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Semantics rules.
+
+\usepackage{semantic}
+\usepackage{ebproof}
+\ebproofset{left label template=\fontsize{9}{11}\selectfont\inserttext}
+\ebproofset{right label template=\fontsize{10}{12}\selectfont\inserttext}
+
+% Grammar specification.
+
+\usepackage{syntax}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       TITLES FORMATTING    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{titlesec}
+\titleformat{\paragraph}{\normalfont\small\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       FIGURE-RELATED PACKAGES    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Float positioning.
+
+\usepackage{float}
+
+% Table over multiple pages.
+
+\usepackage{longtable}
+
+% Pictures.
+
+\usepackage{graphicx}
+
+% Tikz libraries.
+
+\usepackage{tikz-timing}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{environ}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       TABLE-RELATED PACKAGES    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hhline}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       EXTERNAL DOCUMENT REFERENCES    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{xr-hyper}
+
+% \makeatletter
+% \newcommand*{\addFileDependency}[1]{% argument=file name and extension
+%   \typeout{(#1)}
+%   \@addtofilelist{#1}
+%   \IfFileExists{#1}{}{\typeout{No file #1.}}
+% }
+% \makeatother
+
+% \newcommand*{\myexternaldocument}[1]{%
+%   \externaldocument{#1}%
+%   \addFileDependency{#1.tex}%
+%   \addFileDependency{#1.aux}%
+% }
+
+% \myexternaldocument{../latex-papers/SITPN/main.tex}
+% \myexternaldocument{../latex-papers/H-VHDL/main.tex}
+
+% Refs and navigation.
+
+\usepackage[colorlinks=true]{hyperref}
+
+\usepackage{todonotes}
+
+% Line breaks for typewriter font texts
+
+\usepackage[htt]{hyphenat}
+
+% Landscape mode
+
+\usepackage{pdflscape}
+
+% Change margin size locally
+
+\usepackage{changepage}
+
+% Define boxes for theorems and defs
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{breakable}
+
+\usepackage{xspace}
+\usepackage{color}
+
+\definecolor{tab}{gray}{0.85}
+\definecolor{tablight}{gray}{0.93}
+\definecolor{goldenpoppy}{rgb}{0.99, 0.76, 0.0}
+\definecolor{iris}{rgb}{0.35, 0.31, 0.81}
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{cadmiumred}{rgb}{0.89, 0.0, 0.13}
+\definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
+\definecolor{firebrick}{rgb}{0.7, 0.13, 0.13}
+\definecolor{salmon}{rgb}{1.0, 0.55, 0.41}
+\definecolor{redA}{rgb}{1.0, 0.0, 0.0} \definecolor{blueA}{rgb}{0.0,
+  0.0, 1.0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       BIBLIOGRAPHY-RELATED PACKAGES    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:

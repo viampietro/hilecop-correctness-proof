@@ -1,0 +1,16 @@
+auto/
+**/*.bcf
+**/*.run.xml
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.out
+**/*.pdf
+**/*.synctex.gz
+**/*.*~
+macros/
+**/*.tdo
+figures/*.eps
